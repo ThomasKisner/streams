@@ -1,0 +1,21 @@
+{
+  "streams": [
+    {
+      "function (action) {\n        if (typeof action ": "== 'function') {\n          return action(dispatch, getState, extraArgument);\n        }\n\n        return next(action);\n      }",
+      "id": 1
+    },
+    {
+      "function (action) {\n        if (typeof action ": "== 'function') {\n          return action(dispatch, getState, extraArgument);\n        }\n\n        return next(action);\n      }",
+      "id": 2
+    },
+    {
+      "function (action) {\n        if (typeof action ": "== 'function') {\n          return action(dispatch, getState, extraArgument);\n        }\n\n        return next(action);\n      }",
+      "id": 3
+    },
+    {
+      "title": "Title",
+      "description": "Description",
+      "id": 4
+    }
+  ]
+}
