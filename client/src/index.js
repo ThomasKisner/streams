@@ -7,10 +7,11 @@ import reduxThunk from "redux-thunk";
 
 import reducers from "./reducers";
 
-const composeEnhancers =
-  window.__REDUX_DEVTOOLS_EXTENSION__COMPOSE__ || compose;
-const store = createStore(reducers, composeEnhancers(applyMiddleware(reduxThunk)));
-
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(
+  reducers,
+  /* preloadedState, */ composeEnhancers(applyMiddleware(reduxThunk))
+);
 ReactDOM.render(
   <Provider store={store}>
     <App />
